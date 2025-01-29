@@ -1,11 +1,8 @@
-# This program is a basic hello world app
-# created as part of Harvards CS50P
+def main():
+  name = input("What's your name? ")
+  hello(name)
 
-# Ask the user for their name
-name = input("What's your name? ").strip().title()
+def hello(to="world"):
+  print("hello,", to)
 
-# Split users name into first name and last name
-first, last = name.split(" ")
-
-# Say hello to user
-print(f"hello, {first}")
+main()
